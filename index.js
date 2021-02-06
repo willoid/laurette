@@ -1,12 +1,22 @@
-const blues = document.getElementsByClassName("blue");
+//changing background img
 
-const showBlue = () => {
-  console.log(blues);
-  let result = blues.map((item) => {
-    item.classList.add("show");
-  });
-  return result;
-};
+var i = 1;
+document.getElementById(
+  "landing"
+).style.backgroundImage = `url(./indexImages/landing${i}.jpg)`;
 
-let travaux = document.getElementById("travaux");
-travaux.addEventListener("mouseover", showBlue);
+var bg = setInterval(() => {
+  if (i >= 8) {
+    i = 1;
+    document.getElementById(
+      "landing"
+    ).style.backgroundImage = `url(./indexImages/landing${i}.jpg)`;
+    clearInterval(bg);
+  } else {
+    i++;
+    document.getElementById(
+      "landing"
+    ).style.backgroundImage = `url(./indexImages/landing${i}.jpg)`;
+    clearInterval(bg);
+  }
+}, 5000);
