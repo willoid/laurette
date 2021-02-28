@@ -1,10 +1,9 @@
 import Axios from "axios";
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
-import { lauretteContext } from "../Context";
+import { lauretteContext } from "../context";
 
 export default function Login(props) {
-  const [logged, setLogged] = useState(false);
   const [data, setData] = useState({});
   const { setIsLogged } = useContext(lauretteContext);
   let history = useHistory();
