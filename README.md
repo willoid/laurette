@@ -20,6 +20,3 @@
 - basic file structure for deploying on heroku
 
 
-**Packages:**
-
-Axios, Multer, jasonwebtoken, dotenv, bcrypt, cors, mongoose, uuid?, react-router-dom, styled components,
