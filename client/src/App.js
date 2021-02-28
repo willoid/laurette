@@ -6,6 +6,9 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Landing from "./components/Landing"
+import Login from "./components/Login"
+import Main from "./components/Main"
 
 function App() {
 
@@ -13,7 +16,19 @@ function App() {
 
   return (
     <lauretteContext.Provider value={{isLogged, setIsLogged}}>
-      <Router></Router>
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <Landing />
+          </Route>
+          <Route path="/main" exact>
+            <Main />
+          </Route>
+          <Route path="/login" exact>
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </lauretteContext.Provider>
   );
 }

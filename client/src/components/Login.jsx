@@ -1,6 +1,6 @@
 import Axios from "axios";
 import React, { useState, useContext, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { lauretteContext } from "../Context";
 
 export default function Login(props) {
