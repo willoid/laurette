@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {lauretteContext} from "./context";
+import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
 function App() {
+
+  const [isLogged, setIsLogged] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <lauretteContext.Provider value={{isLogged, setIsLogged}}>
+      <Router></Router>
+    </lauretteContext.Provider>
   );
 }
 
