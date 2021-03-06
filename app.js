@@ -2,18 +2,20 @@ var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
-let expressValidator = require("express-validator");
+/* let expressValidator = require("express-validator"); */
 var logger = require("morgan");
 let mongoose = require("mongoose");
 
 require("dotenv").config();
 
+var app = express();
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var entriesRouter = require("./routes/entries");
+/* var entriesRouter = require("./routes/entries"); */
 
 
-var app = express();
+
 
 //connecting DB
 
@@ -42,7 +44,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(expressValidator());
+/* app.use(expressValidator()); */
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.static(path.join(__dirname, "client", "build")));
 app.use(express.static(path.join(__dirname, "uploads")));
@@ -51,6 +53,6 @@ app.use("/uploads", express.static("uploads"));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("/entries", entriesRouter);
+/* app.use("/entries", entriesRouter); */
 
 module.exports = app;

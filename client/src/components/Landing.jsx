@@ -1,14 +1,12 @@
-import React, { useState} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import StyledLanding from "../styledComponents/StyledLanding";
 
 export default function Landing() {
-  const [background] = useState(
+  const [background, setBackground] = useState(
     "../uploads/landing/landing1.jpg"
   );
- 
-
-  /* useEffect(() => {
+  useEffect(() => {
     let i = 1;
     let bg = setInterval(() => {
       if (i < 8) {
@@ -23,7 +21,7 @@ export default function Landing() {
         clearInterval(bg);
       }
     }, 1000);
-  }, [background]); */
+  }, [background]);
 
   return (
     <StyledLanding background={background}>
