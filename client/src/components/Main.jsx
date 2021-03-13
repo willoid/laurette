@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <div>
       <Navigator />
-      <div>hello this is the main page</div>
+      <div>MAIN PAGE:</div>
       <h1>this should be in avenir</h1>
       <h2>this should be in basictitlefont</h2>
       <h3>this should be in bebas</h3>

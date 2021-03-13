@@ -72,6 +72,8 @@ h1 {
 
 h2 {
     font-family: 'basictitlefont';
+    color: blue;
+    text-align: right;
 }
 
 h3 {
