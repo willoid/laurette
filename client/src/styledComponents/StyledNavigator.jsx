@@ -1,20 +1,24 @@
 import styled, {css} from "styled-components";
 
 export const StyledNavigator = styled.div`
+border: 1px red solid;
   display: grid;
-  grid-template-columns: 600px 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-columns: 800px 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
  
-  >h3 {
+  >h2 {
       color: #075dfc;
       font-size: 30px;
       margin: 0;
       padding: 0;
+      border: 1px green solid;
   }
   
   > a {
       text-decoration: none;
       color: inherit;
+      border: 1px blue solid;
   }
 `;
 export const StyledLink = styled.h2`

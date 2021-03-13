@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import StyledLanding from "../styledComponents/StyledLanding";
 import {StyledLinkH3} from "../styledComponents/StyledNavigator"
-import landing1 from "../landing/landing1.jpg";
-import landing2 from "../landing/landing2.jpg";
+import landing1 from "../landing/landingResized/1.png";
+import landing2 from "../landing/landingResized/2.png";
 import landing3 from "../landing/landing3.jpg";
 import landing4 from "../landing/landing4.jpg";
 import landing5 from "../landing/landing5.jpg";
@@ -37,7 +37,7 @@ export default function Landing() {
         setBackground(bgs[i]);
         console.log(background);
       }
-    }, 6000);
+    }, 10000);
     return () => clearInterval(bg);
   };
 
@@ -48,7 +48,7 @@ export default function Landing() {
 
   return (
     <StyledLanding background={background}>
-      <Link to="/main"><StyledLinkH3 landing>laurette  le  gall</StyledLinkH3></Link>
+      <Link to="/main"><StyledLinkH3 landing>laurette&nbsp;&nbsp;&nbsp;le&nbsp;&nbsp;&nbsp;gall</StyledLinkH3></Link>
       {/*  <Link to="/main"><i class="fas fa-bars"></i></Link> */}
     </StyledLanding>
   );
