@@ -6,8 +6,10 @@ export default function Infos() {
     <StyledInfos>
       <h4>LAURETTE LE GAL</h4>
       <h4>Née à Caen en 1986</h4>
-      <h5>l_legall@hotmail.com (worksans medium)</h5>
-      <h5>Portfolio PDF(worksans medium)</h5>
+      <br></br>
+      <h9>l_legall@hotmail.com</h9><br></br>
+      <br></br>
+      <h9>Portfolio PDF</h9>
       <h6>EXPOSITIONS PERSONNELLES </h6>
       <div>
         <h7>2018</h7>

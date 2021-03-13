@@ -5,6 +5,8 @@ import bebas from "./fonts/bebas.ttf";
 import worksansLight from "./fonts/WorkSans-Light.ttf";
 import worksansMedium from "./fonts/WorkSans-Medium.ttf";
 import worksansRegular from "./fonts/WorkSans-Regular.ttf";
+import worksansBold from "./fonts/WorkSans-Bold.ttf";
+import worksansSemibold from "./fonts/WorkSans-SemiBold.ttf"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -48,6 +50,20 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'worksansBold';
+    src: url(${worksansBold}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'worksansSemibold';
+    src: url(${worksansSemibold}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 html {
@@ -72,7 +88,7 @@ h1 {
 
 h2 {
     font-family: 'basictitlefont';
-    color: blue;
+    color: #075dfc;
     text-align: right;
 }
 
@@ -90,11 +106,18 @@ h4, h8 {
     font-family: 'worksansRegular';
 }
 
-h5, h6, h7 {
+h5 {
     font-family: 'worksansMedium';
 }
 
+h6 {
+    font-family: 'worksansBold';
+    font-size: 30px;
+}
 
+h7, h9 {
+    font-family: 'worksansSemibold';
+}
 `;
 
 export default GlobalStyle;

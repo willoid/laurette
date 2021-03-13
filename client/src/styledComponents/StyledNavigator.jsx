@@ -6,7 +6,7 @@ export const StyledNavigator = styled.div`
   grid-template-rows: 1fr;
  
   >h3 {
-      color: blue;
+      color: #075dfc;
       font-size: 30px;
       margin: 0;
       padding: 0;
@@ -27,7 +27,7 @@ padding-right: 20px;
  export const StyledLinkH3 = styled.h3`
  text-align: left;
  padding: 0;
- color: blue;
+ color: #075dfc;
  font-size: 30px;
  margin-top: 0px;
  padding: 5px;

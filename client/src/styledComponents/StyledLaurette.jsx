@@ -6,7 +6,7 @@ width: 100vw;
 padding: 60px;
 >h7 {
     display: block;
-    color: blue;
+    color: #075dfc;
     font-size: 30px;
     margin: 40px 0;
 }

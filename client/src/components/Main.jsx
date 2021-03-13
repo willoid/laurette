@@ -12,6 +12,8 @@ export default function Main() {
       <p>this should be in worksansLight</p>
       <span>this should be in worksansMedium</span>
       <h4>this should be in worksansRegular</h4>
+   <h6>this is worksans bold</h6>
+    <h7>this is worksans semibold</h7>
     </div>
   );
 }

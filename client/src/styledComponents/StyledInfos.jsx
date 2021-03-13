@@ -17,6 +17,10 @@ const StyledInfos = styled.div`
     font-size: 18px;
   }
 
+  > h9 {
+    marging: 20px 0 0 0;
+  }
+
   >h7 {
       font-size: 20px;
       grid-column: 1 / 2;
