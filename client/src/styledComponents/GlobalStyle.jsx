@@ -88,6 +88,9 @@ h4 {
     font-family: 'worksansRegular';
 }
 
+h5 {
+    font-family: 'worksansMedium';
+}
 `;
 
 export default GlobalStyle;

@@ -9,6 +9,7 @@ import Landing from "./components/Landing"
 import Login from "./components/Login"
 import Main from "./components/Main"
 import GlobalStyle from "./styledComponents/GlobalStyle";
+import Card from "./components/Card"
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/login" exact>
             <Login />
+          </Route>
+          <Route path="/card" exact>
+            <Card />
           </Route>
         </Switch>
       </Router>
