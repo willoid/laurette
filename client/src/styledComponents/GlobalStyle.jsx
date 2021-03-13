@@ -84,13 +84,15 @@ font-family: 'worksansLight';
 
 
 
-h4 {
+h4, h8 {
     font-family: 'worksansRegular';
 }
 
-h5 {
+h5, h6, h7 {
     font-family: 'worksansMedium';
 }
+
+
 `;
 
 export default GlobalStyle;

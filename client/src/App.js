@@ -11,6 +11,7 @@ import Main from "./components/Main"
 import GlobalStyle from "./styledComponents/GlobalStyle";
 import Card from "./components/Card"
 import Bonus from "./components/Bonus"
+import Infos from "./components/Infos"
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/bonus" exact>
             <Bonus />
+          </Route>
+          <Route path="/infos" exact>
+            <Infos />
           </Route>
         </Switch>
       </Router>
