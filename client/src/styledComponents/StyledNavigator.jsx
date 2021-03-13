@@ -29,4 +29,12 @@ padding-right: 20px;
  padding: 0;
  color: blue;
  font-size: 30px;
- margin-top: 0px;`
+ margin-top: 0px;
+ padding: 5px;
+ 
+ ${(props)=>props.landing && css`
+ color: white;
+ text-decoration: none;
+ font-size: 50px;`}`
+
+ 
