@@ -10,6 +10,7 @@ import Login from "./components/Login"
 import Main from "./components/Main"
 import GlobalStyle from "./styledComponents/GlobalStyle";
 import Card from "./components/Card"
+import Bonus from "./components/Bonus"
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/card" exact>
             <Card />
+          </Route>
+          <Route path="/bonus" exact>
+            <Bonus />
           </Route>
         </Switch>
       </Router>
