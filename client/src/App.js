@@ -13,6 +13,7 @@ import Card from "./components/Card"
 import Bonus from "./components/Bonus"
 import Infos from "./components/Infos"
 import Laurette from "./components/Laurette"
+import TestCard from "./components/TestCard"
 
 function App() {
 
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route path="/infos" exact>
             <Infos />
+          </Route>
+          <Route path="/testCard" exact>
+            <TestCard />
           </Route>
           <Route path="/laurette" exact>
             <Laurette />

@@ -7,6 +7,7 @@ import flecheDroite from "../landing/flecheDroite.png";
 import flecheGauche from "../landing/flecheGauche.png"
 import menuNoir from "../landing/menuNoir.png";
 import StyledButton from "../styledComponents/StyledButton"
+
 export default function Card() {
 
     const background = landing2;
