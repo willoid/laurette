@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import StyledCard from "../styledComponents/StyledCard";
 import StyledModule from "../styledComponents/StyledModule";
-import landing2 from "../landing/landing2.jpg";
-import testPortrait from "../landing/portraitTest.jpg";
 import flecheDroite from "../landing/flecheDroite.png";
 import flecheGauche from "../landing/flecheGauche.png";
 import menuNoir from "../landing/menuNoir.png";
@@ -12,10 +10,6 @@ import mockup from "../mockup";
 export default function TestCard() {
   const [mockUp] = useState(mockup);
 
-  useEffect(() => {
-    console.log(mockUp);
-    console.log(mockUp.titulo);
-  }, []);
 
   const getModule = (type) => {
     switch (type.type) {
@@ -78,7 +72,7 @@ export default function TestCard() {
             <h4>{type.data.p3}</h4>
           </StyledModule>
         );
-      case "portraitBG":
+      case "portraitBg":
         return (
           <StyledModule portrait background={type.data.picUrl}></StyledModule>
         );
